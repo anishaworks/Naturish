@@ -1,0 +1,198 @@
+<html>
+<head>
+	<title>
+		NATURISH | ONLINE SKINCARE TO YOUR DOORSTEPS
+	</title>
+	 <link rel="stylesheet" type="text/css" href="C:\Users\Anisha Rawat\Desktop\Naturish\naturish.css">
+    <script type="text/javascript">
+        var slidePosition = 1;
+SlideShow(slidePosition);
+
+// forward/Back controls
+function plusSlides(n) {
+  SlideShow(slidePosition += n);
+}
+
+//  images controls
+function currentSlide(n) {
+  SlideShow(slidePosition = n);
+}
+
+function SlideShow(n) {
+  var i;
+  var slides = document.getElementsByClassName("Containers");
+  var circles = document.getElementsByClassName("dots");
+  if (n > slides.length) {slidePosition = 1}
+  if (n < 1) {slidePosition = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < circles.length; i++) {
+      circles[i].className = circles[i].className.replace(" enable", "");
+  }
+  slides[slidePosition-1].style.display = "block";
+  circles[slidePosition-1].className += " enable";
+} 
+var slidePosition = 0;
+SlideShow();
+
+function SlideShow() {
+  var i;
+  var slides = document.getElementsByClassName("Containers");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slidePosition++;
+  if (slidePosition > slides.length) {slidePosition = 1}
+  slides[slidePosition-1].style.display = "block";
+  setTimeout(SlideShow, 10000); // Change image every 2 seconds
+} 
+    </script>
+</head>
+  
+<body>
+     <div class="dropdwn">
+        <nav>
+            <img src="logo.jpg" class="logo">
+            <ul>
+                <li><a href="#"> All Products</a></li>
+                <li><a href="#"> Serums <i class="fa-solid fa-caret-down" style="color: #000000;"></i></a>
+                    <ul>
+                        <li><a href="#" >Vitamin c</a></li>
+                        <li><a href="#" >Hylaraunic acid</a></li>
+                        <li><a href="#" >Salicylic acid</a></li>
+                        <li><a href="#" >Retinol </a></li>
+                    </ul>
+                </li>
+                <li> <a href="#"> Oils <i class="fa-solid fa-caret-down" style="color: #000000;"></i> </a>
+                    <ul>
+                        <li> <a href="#"> Coconut </a></li>
+                        <li> <a href="#"> Hibiscus & black seeds </a></li>
+                    </ul>
+                </li>
+                <li><a href="#"> Skin Care <i class="fa-solid fa-caret-down" style="color: #000000;"></i></a>
+                    <ul>
+                        <li> <a href="#"> Facewash</a></li>
+                        <li> <a href="#"> Face Scrub </a></li>
+                        <li> <a href="#"> Face Masks </a></li>
+                    </ul>
+                </li>
+                <li> <a href="#"> Gift Hampers </a></li>
+                <li> <a href="#"> New Arrivals </a></li>
+                <li> <a href="#"> Track Order </a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="parallax-1">
+        <br><br><br><br>
+        <div class="slideshow-container fade">
+  <div class="Containers">
+    <div class="MessageInfo">1 / 5</div>
+    <img src="C:\Users\Anisha Rawat\Desktop\Naturish\1.png" style="width:100%">
+    
+  </div>
+
+  <div class="Containers">
+    <div class="MessageInfo">2 / 5</div>
+    <img src="C:\Users\Anisha Rawat\Desktop\Naturish\2.png" style="width:100%">
+  </div>
+
+  <div class="Containers">
+    <div class="MessageInfo">3 / 5</div>
+    <img src="C:\Users\Anisha Rawat\Desktop\Naturish\3.png" style="width:100%">
+  </div>
+<div class="Containers">
+    <div class="MessageInfo">4 / 5</div>
+    <img src="C:\Users\Anisha Rawat\Desktop\Naturish\4.png" style="width:100%">
+  </div>
+  <div class="Containers">
+    <div class="MessageInfo">5 / 5</div>
+    <img src="C:\Users\Anisha Rawat\Desktop\Naturish\5.png" style="width:100%">
+  </div>
+  <!-- Back and forward buttons -->
+  <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The circles/dots -->
+<div style="text-align:center">
+  <span class="dots" onclick="currentSlide(1)"></span>
+  <span class="dots" onclick="currentSlide(2)"></span>
+  <span class="dots" onclick="currentSlide(3)"></span>
+   <span class="dots" onclick="currentSlide(4)"></span>
+    <span class="dots" onclick="currentSlide(5)"></span>
+</div> 
+    </div>
+  
+    <!--Content of first parallax -->
+    <div class="para-1">
+        <center>
+        <p>
+            Are you looking for a skincare brand that offers natural and effective products? Look no further than Naturish!
+            <br><br>
+Naturish is a skincare brand that prides itself on using only natural ingredients to provide their customers with the best possible results. Their products are free of harmful chemicals, parabens, sulfates, and synthetic fragrances, making them safe for all skin types.
+Naturish also offers a range of skincare sets, which are perfect for those who are new to the brand. Our Complete Skincare Set includes a cleanser, toner, serum, and moisturizer, all of which work together to give you healthy, glowing skin.
+        </p>
+    </center>
+    </div>
+  
+    <!-- Giving title of the first parallax -->
+
+    <div class="parallax-2">
+        <div> <center>
+           <h2> Skincare to Your Doorsteps!</h2>
+       <a href="Guide.html"> <button class="button">A Guide to Clear Skin</button> </a>
+
+    </div>
+<table>
+    <tr>
+    <td><img src="product1.png" width="250" height="300"></td>
+    <td><img src="product2.png" width="250" height="300"></td>
+    <td><img src="product3.png"width="250" height="300"></td>
+     <td><img src="product4.png"width="220" height="250"></td>
+      <td><img src="product5.png"width="250" height="270"></td> 
+      <td><img src="product6.png"width="290" height="290"></td>
+</tr>
+</table>
+</center>
+    </div>
+  
+    <!--Content of second parallax -->
+    <div class="para-2">
+        <p>
+            <h2>One step to flawless beauty!</h2> <br><br>
+             Naturish is a skincare brand that prides itself on using only natural ingredients to provide their customers with the best possible results.
+             <br> Our products are free of harmful chemicals, parabens, sulfates, and synthetic fragrances, making them safe for all skin types.
+<br>Not only does Naturish offer high-quality products, but they are also committed to sustainability. 
+All of our packaging is recyclable, and they use <br>biodegradable packing  peanuts to reduce waste.
+        </p>
+    </div>
+  
+    <!--This will be same as first parallax-->
+    <div class="parallax-2">
+      <center>
+        <h1>BEST SELLERS</h1>
+      </center>
+      <marquee >
+        <table>
+          <tr>
+            <td><img src="product1.png" width="320px" height="320px"></td>
+            <td><img src="move1.png"width="300px" height="300px"></td>
+            <td><img src="move2.png"width="300px" height="300px"></td>
+            <td><img src="move3.png"width="300px" height="300px"></td>
+            <td><img src="product3.png" width="320px" height="320px"></td>
+
+          </tr>
+        </table>
+      </marquee>
+  </div>
+</div>
+     </div>
+    <div class="para-2">
+        <p>
+       
+        </p>
+    </div>
+</body>
+</html>
